@@ -46,10 +46,11 @@ h1{
   padding: 15px;
   border-radius: 10px;
 }
-.annual h4, p{
+
+.plan, p{
   margin: 5px 20px;
 }
-.annual h4, h1{
+.plan, h1{
   color: hsl(223, 47%, 23%);
   font-weight: 900;
 }
