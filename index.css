@@ -4,8 +4,8 @@
   body{
     background-image: url('./images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
+    overflow: hidden;
   }
-  
 }
 
 body{
@@ -16,19 +16,20 @@ body{
   box-sizing: border-box;
   font-family: 'Red Hat Display', sans-serif;
   background-color: hsl(225, 100%, 94%);
+  position: relative;
 }
 h1{
  font-size: 20px;
 }
 .container{
   width: 1200px;
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto;
 }
 .card{
   display: flex;
   flex-direction: column;
-  max-width: 370px;
+  max-width: 350px;
   margin: 1.5rem auto;
   text-align: center;
   background-color: white;
@@ -38,6 +39,7 @@ h1{
 .banner{
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  width: 100%;
 }
 #heading-para{
   color: hsl(224, 23%, 55%);
@@ -48,7 +50,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 40px;
+  margin: 20px 30px;
   padding: 15px;
   border-radius: 10px;
 }
