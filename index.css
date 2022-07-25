@@ -1,97 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-@media (max-width:375px){
-  body{
-    background-image: url('./images/pattern-background-mobile.svg');
-    background-repeat: no-repeat;
-  }
-}
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Order summary card</title>
+</head>
+<body>
+  <div class="container">
+    <main class="card">
+      <embed src="./images/illustration-hero.svg" type="image/svg+xml" class="banner"/>
+      <h1>Order Summary</h1>
+      <p id="heading-para">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <div class="annual">
+        <embed src="./images/icon-music.svg" type="image/svg+xml">
+        <div>
+          <p class="plan">Annual Plan</p>
+          <p id="price">$59.99/year</p>
+        </div>
+        <a href="">Change</a>
+      </div>
 
-body{
-  background-image: url('./images/pattern-background-desktop.svg');
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Red Hat Display', sans-serif;
-  background-color: hsl(225, 100%, 94%);
-}
-h1{
- font-size: 20px;
-}
-.card{
-  width: 450px;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -40%);
-  text-align: center;
-  background-color: white;
-  border-radius: 15px;
-}
-.banner{
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-#heading-para{
-  color: hsl(224, 23%, 55%);
-  padding: 0 50px;
-}
-.annual{
-  background-color: hsl(225, 100%, 98%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 40px;
-  padding: 15px;
-  border-radius: 10px;
-}
+      <button>Proceed to Payment</button>
+      <a id="cancle" href="" >Cancel Order</a>
+    </main>
 
-.plan, p{
-  margin: 5px 20px;
-}
-.plan, h1{
-  color: hsl(223, 47%, 23%);
-  font-weight: 900;
-}
-.annual a{
-  color: hsl(245, 75%, 52%);
-  margin-left: 50px;
-}
-.annual a:hover{
-  text-decoration: none;
-  color: #766cf1;
-}
-button{
-  display: block;
-  background-color: hsl(245, 75%, 52%);
-  color: white;
-  margin: 0 auto;
-  border: none;
-  border-radius: 10px;
-  padding: 15px 125px;
-  box-shadow: 0px 15px 15px 2px #dedbf8;
-  cursor: pointer;
-}
-button:hover{
-  background-color: #766cf1;
-}
-#cancle{
-  text-decoration: none;
-  display: block;
-  width: 120px;
-  margin:20px auto 30px;
-  cursor: pointer;
-  font-weight:700;
-}
-#cancle:hover{
-  color: hsl(223, 47%, 23%);
-}
-#cancle, #price{
-  color: hsl(224, 23%, 55%);
-}
-footer{
-  margin-top: 630px;
-}
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+    <footer>
+      <p> Coded by <a href="https://www.linkedin.com/in/omobayode-osinubi-7a564a189/">Omobayode Festus</a></p>
+    </footer>
+  </div>
+</body>
+</html>
